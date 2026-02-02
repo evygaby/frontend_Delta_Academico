@@ -8,7 +8,7 @@ import config from 'devextreme/core/config';
 if (environment.production) {
   enableProdMode();
 }
-config({ licenseKey })
+config({ licenseKey });
 
 // -------------------------
 // Configuración de cultura
@@ -38,5 +38,6 @@ locale('es-EC');
 // Arrancar Angular
 // -------------------------
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
+  .catch((err: unknown) => console.error(err));
