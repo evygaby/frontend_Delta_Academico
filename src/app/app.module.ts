@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { LayoutsModule } from './layouts/layouts.module';
-import { PagesModule } from './pages/pages.module';
 
 import { environment } from '../environments/environment';
 import { initFirebaseBackend } from './authUtils';
@@ -65,12 +64,21 @@ if (environment.defaultauth === 'firebase') {
     AppComponent
   ],
   imports: [
-  BrowserModule,
-  BrowserAnimationsModule,
-  HttpClientModule,
-  AppRoutingModule,
-  NgxSpinnerModule.forRoot()
-],
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    LayoutsModule,
+    NgxSpinnerModule.forRoot(),
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
+  ],
   // imports: [
   //   BrowserModule,
   //   BrowserAnimationsModule,
