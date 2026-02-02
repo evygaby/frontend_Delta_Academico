@@ -29,6 +29,7 @@ import { SharedModule } from "../shared/shared.module";
 import { WidgetModule } from '../shared/widget/widget.module';
 import { AppsModule } from "./apps/apps.module";
 import { UsuarioComponent } from './usuario/usuario.component';
+import { HomeComponent } from './Home/Home.component';
 import { DxBoxModule, DxCardViewModule, DxCheckBoxModule, DxListModule, DxDataGridModule, DxDateBoxModule, DxNumberBoxModule, DxSelectBoxModule, DxTemplateModule, DxTextAreaModule, DxTextBoxModule, DxTreeMapModule, DxDateRangeBoxModule, DxPivotGridModule, DxToolbarModule, DxButtonModule, DxPivotGridFieldChooserModule, DxScrollViewModule, DxTabPanelModule, DxFileUploaderModule, DxPopupModule, DxFormModule, DxValidatorModule  } from 'devextreme-angular';
 import { NgSelectModule } from '@ng-select/ng-select';
 
@@ -40,6 +41,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     UsuarioComponent,
+    HomeComponent,
     LoadingComponent,
   ],
   imports: [
