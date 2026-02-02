@@ -29,6 +29,7 @@ import { SharedModule } from "../shared/shared.module";
 import { WidgetModule } from '../shared/widget/widget.module';
 import { AppsModule } from "./apps/apps.module";
 import { UsuarioComponent } from './usuario/usuario.component';
+import { HomeComponent } from './Home/Home.component';
 import { DxBoxModule, DxCardViewModule, DxCheckBoxModule, DxListModule, DxDataGridModule, DxDateBoxModule, DxNumberBoxModule, DxSelectBoxModule, DxTemplateModule, DxTextAreaModule, DxTextBoxModule, DxTreeMapModule, DxDateRangeBoxModule, DxPivotGridModule, DxToolbarModule, DxButtonModule, DxPivotGridFieldChooserModule, DxScrollViewModule, DxTabPanelModule, DxFileUploaderModule, DxPopupModule, DxFormModule, DxValidatorModule  } from 'devextreme-angular';
 import { NgSelectModule } from '@ng-select/ng-select';
 
@@ -36,15 +37,13 @@ import { LoadingComponent } from './loading/loading.component';
 
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { MatNativeDateModule } from '@angular/material/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    ToastsContainer, CurrencyInputDirective, AutoFocusInvalidDirective,
     UsuarioComponent,
+    HomeComponent,
     LoadingComponent,
   ],
-  exports: [AutoFocusInvalidDirective],
   imports: [
     CommonModule, DxNumberBoxModule,
     FormsModule, DxCheckBoxModule, DxDateBoxModule, MatNativeDateModule,
@@ -75,7 +74,7 @@ import { BrowserModule } from '@angular/platform-browser';
     DxButtonModule,
     DxPivotGridFieldChooserModule,
     DxScrollViewModule,
-    DxTabPanelModule, DxPopupModule, DxFormModule, DxValidatorModule,DxDateBoxModule ,DxTemplateModule
+    DxTabPanelModule, DxPopupModule, DxFormModule, DxValidatorModule, DxDateBoxModule, DxTemplateModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
