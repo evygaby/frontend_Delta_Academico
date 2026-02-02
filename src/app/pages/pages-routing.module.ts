@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MenuGuard } from '../../app/core/guards/menu.guard';
 import { HomeComponent } from './Home/Home.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 
 const routes: Routes = [

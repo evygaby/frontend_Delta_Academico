@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbNavModule, NgbAccordionModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbNavModule, NgbAccordionModule, NgbDropdownModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -36,6 +37,7 @@ import { BlogComponent } from './landing/job/blog/blog.component';
 import { JobcategoriesComponent } from './landing/job/jobcategories/jobcategories.component';
 import { JobFooterComponent } from './landing/job/job-footer/job-footer.component';
 import { LoadComponent } from './load/load.component';
+import { ToastsContainerComponent } from './components/toasts-container/toasts-container.component';
 
 
 @NgModule({
@@ -68,15 +70,47 @@ import { LoadComponent } from './load/load.component';
     JobcategoriesComponent,
     JobFooterComponent,
     LoadComponent,
+    ToastsContainerComponent,
   ],
   imports: [
     CommonModule,
     NgbNavModule,
     NgbAccordionModule,
     NgbDropdownModule,
+    NgbToastModule,
+    NgSelectModule,
  
   ],
-  exports: [BreadcrumbsComponent, ClientLogoComponent, ServicesComponent, CollectionComponent, CtaComponent, DesignedComponent, PlanComponent, FaqsComponent, ReviewComponent, CounterComponent, WorkProcessComponent, TeamComponent, ContactComponent, FooterComponent, ScrollspyDirective,
-    WalletComponent, MarketPlaceComponent, FeaturesComponent, CategoriesComponent, DiscoverComponent, TopCreatorComponent, ProcessComponent, FindjobsComponent, CandidatesComponent, BlogComponent, JobcategoriesComponent, JobFooterComponent]
+  exports: [
+    BreadcrumbsComponent,
+    ClientLogoComponent,
+    ServicesComponent,
+    CollectionComponent,
+    CtaComponent,
+    DesignedComponent,
+    PlanComponent,
+    FaqsComponent,
+    ReviewComponent,
+    CounterComponent,
+    WorkProcessComponent,
+    TeamComponent,
+    ContactComponent,
+    FooterComponent,
+    ScrollspyDirective,
+    WalletComponent,
+    MarketPlaceComponent,
+    FeaturesComponent,
+    CategoriesComponent,
+    DiscoverComponent,
+    TopCreatorComponent,
+    ProcessComponent,
+    FindjobsComponent,
+    CandidatesComponent,
+    BlogComponent,
+    JobcategoriesComponent,
+    JobFooterComponent,
+    ToastsContainerComponent,
+    NgSelectModule,
+  ]
 })
 export class SharedModule { }
