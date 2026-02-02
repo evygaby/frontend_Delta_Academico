@@ -36,15 +36,12 @@ import { LoadingComponent } from './loading/loading.component';
 
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { MatNativeDateModule } from '@angular/material/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    ToastsContainer, CurrencyInputDirective, AutoFocusInvalidDirective,
     UsuarioComponent,
     LoadingComponent,
   ],
-  exports: [AutoFocusInvalidDirective],
   imports: [
     CommonModule, DxNumberBoxModule,
     FormsModule, DxCheckBoxModule, DxDateBoxModule, MatNativeDateModule,
@@ -75,7 +72,7 @@ import { BrowserModule } from '@angular/platform-browser';
     DxButtonModule,
     DxPivotGridFieldChooserModule,
     DxScrollViewModule,
-    DxTabPanelModule, DxPopupModule, DxFormModule, DxValidatorModule,DxDateBoxModule ,DxTemplateModule
+    DxTabPanelModule, DxPopupModule, DxFormModule, DxValidatorModule, DxDateBoxModule, DxTemplateModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
