@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbNavModule, NgbAccordionModule, NgbDropdownModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 
 
@@ -77,6 +78,7 @@ import { ToastsContainerComponent } from './components/toasts-container/toasts-c
     NgbAccordionModule,
     NgbDropdownModule,
     NgbToastModule,
+    NgSelectModule,
  
   ],
   exports: [
@@ -108,6 +110,7 @@ import { ToastsContainerComponent } from './components/toasts-container/toasts-c
     JobcategoriesComponent,
     JobFooterComponent,
     ToastsContainerComponent,
+    NgSelectModule,
   ]
 })
 export class SharedModule { }
